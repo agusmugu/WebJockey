@@ -19,7 +19,6 @@ h1{
 nav a{
     text-align: left;
     display: block;
-    width: 20%;
     }
 .Onsite{
     text-decoration: none;
@@ -32,7 +31,6 @@ h2{
 
 
 article{
-    width: 80%;
     display: block;
 }
 h3{
