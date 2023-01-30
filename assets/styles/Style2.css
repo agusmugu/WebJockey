@@ -4,11 +4,90 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    background: black;
+}
 
+/* HEADER */
+
+.titulo{
+    /* TITULO */
+    color:#f8e12e;
+    font-size: 50px;
+    -webkit-text-stroke: 2px #c63939;
+    text-transform: uppercase;
+}
+.imagenestilo2{
+    height: 250px;
+    width:100%;
+    object-fit: cover;
+    
+}
 .logo{
     object-fit: contain;
-    position: absolute;
-    top: 250px; 
-    left: 80%;
+    position:absolute;
+    top: 300px; 
     height: 200px;
+}
+h2{
+    background-color: black;
+    color:#f8e12e;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+/* NAV */
+
+nav{
+    width: 300px;
+    display: inline;
+    position: absolute;
+    position: -100px;
+}
+nav a{
+    font-weight: bolder;
+    color: #f8e12e;
+    background-color: grey;
+    padding: 10px;
+}
+.Onsite{
+    text-decoration: none;
+    
+    color: black;
+    outline: 2px solid #f8e12e;
+    background-color: #f8e12e;
+}
+
+
+/* ARTICLE */
+
+article{
+    display: block;
+    position: relative;
+    left: 250px;
+    width: 75%;
+    color: white;
+}
+h3{
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+article p{
+    padding: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: end;
+    color: black;
+    background-color: #f8e12e;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-transform: uppercase bolder;
 }
