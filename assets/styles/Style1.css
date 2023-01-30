@@ -37,6 +37,9 @@ h2{
     padding: 10px;
     text-transform: uppercase;
 }
+.imagenestilo2{
+    display: none;
+}
 
 
 /* NAV */
@@ -87,7 +90,7 @@ footer{
     text-align: end;
     color: #f8e12e;
     background-color: black;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 20px;
