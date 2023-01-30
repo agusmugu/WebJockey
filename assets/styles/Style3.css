@@ -6,17 +6,16 @@
 }
 html{
     background: fixed;
-    background: rgb(33,25,21);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 45%, rgba(55,122,114,1) 60%, rgba(141,232,221,1) 100%);
+    background: rgb(31, 31, 31);
     background-attachment: fixed;
 }
 
 /* HEADER */
 .titulo{
     /* TITULO */
-    color:#f8e12e;
+    color:#f1f0e5;
     font-size: 75px;
-    -webkit-text-stroke: 2px #c63939;
+    -webkit-text-stroke: 2px #333333;
     text-shadow: -2px -2px 1px #000;
     text-transform: uppercase;
     position: fixed;
@@ -30,34 +29,38 @@ figure .imagenestilo2{
 .logo{
     object-fit: contain;
     position: absolute;
-    top: 250px; 
-    left: 80%;
-    height: 200px;
+    left: 40%;
+    top: 200px;
+    height: 250px;
+    background-color: #5fa199;
+    border-radius: 40px 40px 40px 40px;
+    background-blend-mode: color-burn;
 }
 h2{
-    background-color: black;
-    color:#f8e12e;
-    text-align: center;
+    background-color: rgb(216, 216, 216);
+    color:#353535;
     padding: 10px;
     text-transform: uppercase;
+    font-weight:900;
 }
 
 
 
 /* NAV */
 nav{
-    width: 150px;
     display: block;
+    position: fixed;
+    bottom: 50px;
+
 }
 nav a{
+    align-items: center;
     font-weight: bolder;
-    color: #f8e12e;
-    background-color: black;
-    text-align: left;
-    display: block;
-    padding: 10px;
-    margin-top: 40px;
-    outline: 2px solid black;
+    color: #000000;
+    background-color: rgb(202, 202, 202);
+    padding:10px 50px 10px 50px ;
+    margin: 15px;
+    outline: 2px solid rgb(255, 255, 255);
     outline-offset: 3px;
 }
 .Onsite{
@@ -73,10 +76,9 @@ nav a{
 article{
     display: block;
     position: relative;
-    top: -200px;
-    left: 250px;
-    width: 75%;
-    color: #f8e12e;
+    top: 75px;
+    left: 5px;
+    color: #ffffff;
     text-shadow: 2px 2px 1px #000;
 }
 h3{
@@ -91,7 +93,7 @@ article p{
 /* FOOTER */
 footer{
     text-align: end;
-    color: #f8e12e;
+    color: #dbdbdb;
     background-color: black;
     position: fixed;
     bottom: 0;
