@@ -44,7 +44,6 @@ nav{
     width: 300px;
     display: inline;
     position: absolute;
-    position: -100px;
 }
 nav a{
     font-weight: bolder;
