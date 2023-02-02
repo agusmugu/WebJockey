@@ -66,7 +66,9 @@ nav a:hover{
 }
 
 /* ARTICLE */
-
+    li{
+        margin: 10px;
+    }
 
 /* FOOTER */
 footer{
