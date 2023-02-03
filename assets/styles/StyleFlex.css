@@ -4,35 +4,77 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    background-color: rgb(63, 63, 63);
+}
 
 /* HEADER */
 
 header{
     display: flex; 
-    /* TEXTO */
+    justify-content: space-between;
+    height:fit-content;
+    /* Texto */
+    text-shadow: 10px 5px 5px #000;
+    text-transform: uppercase;
+    /* Fondo */
+    background-image: url(../img/design1_image2.jpg);
+    background-position-y: 25%;
+}
+header h1{
     color:#f8e12e;
     -webkit-text-stroke: 2px #c63939;
-    text-shadow: -2px -2px 1px #000;
-    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 15%;
 }
+    /* Subtitulo */
+.tab{
+    color: #000;
+    -webkit-text-stroke: 1px #f8e12e;
+    align-self: flex-end;
+    font-size: 35px;
+}
+    /* Logo */
 .logo{
-    justify-self: center;
-    width: 300px;
+    position: absolute;
+    width: 15%;
+    right: 0px;
+    transition: .8s ease;
+    border-top-left-radius: 400px 200px;
+    border-top-right-radius: 400px 200px;
+    border-bottom-left-radius: 400px 200px;
+    border-bottom-right-radius: 400px 200px;
+    background-color: black
+}
+.logo:hover{
+    transform: translate(-300px,150px) scale(2,2);
+    filter:contrast(120%);
+    background-color: transparent;
+    
 }
 
 /* NAV */
+
 nav{
     display: flex;
-    justify-content: space-evenly;
+    width:auto;
 }
 nav a{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
     /* Letras */
     font-weight: bolder;
     color: #f8e12e;
     background-color: black;
-    outline: 2px solid black;
-    outline-offset: 3px;
-    padding:15px 100px;
+    padding:15px 10px;
+    text-align: center;
+}
+nav a:hover{
+    width: 120px;
+    opacity: 1;
+    filter:contrast(120%);
 }
 .Onsite{
     text-decoration: none;
@@ -41,15 +83,83 @@ nav a{
     background-color: #f8e12e;
 }
 
-/* ARTICLE */
-article{
+/* BODY */
+main{
+    flex-direction: column;
+    flex: 1;
+}
+section{
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex: 1;
+    color: white;
+}
+
+section h3{
+    padding: 10px;
+    color: #fce00b;
+}
+    
+
+/* INDEX & ABOUT */
+.index, .contact, .about{
+    flex-direction: column;  
+}
+.index p,.contact p, .about p, .game-information p{
+    padding: 10px 10px 10px 50px;
+}
+
+/* Calendario */
+table, thead, tr, th, td{
+    border: rgb(192, 192, 192) 2px solid;
+    border-collapse: collapse;
+    padding: 15px;
+}
+th{
+    color: #f8e12e;
+}
+.game-information{
     flex-direction: column;
 }
 
+.Contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Rules */
+.rules{
+    flex-direction: column;
+    padding: 10px;
+}
+.rules p{
+    text-indent: 40px;
+}
+li{
+    margin: 10px;
+}
+.list-letras{
+    list-style: lower-latin;
+}
+.list-allplay{
+    padding-left: 50px;
+    list-style: circle;
+}
+
+.negrita{
+    font-weight: bolder;
+}
 /* FOOTER */
+
 footer{
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    color: white;
+    background-color: #000;
+    width: 100%; 
+    height: 20px;
+    font-weight: bolder;
 }
