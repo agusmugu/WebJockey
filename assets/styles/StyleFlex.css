@@ -150,6 +150,12 @@ li{
 .negrita{
     font-weight: bolder;
 }
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
 /* FOOTER */
 
 footer{
