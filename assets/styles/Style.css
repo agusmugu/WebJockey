@@ -178,6 +178,27 @@ form{
     flex-direction: column;
 }
 
+
+#aj_katzenmaier_map{
+    display: none;
+}
+#greenbay_map{
+    display: none;
+}
+#howard_a_yeeager_map{
+    display: none;
+}
+#marjorie_p_hart_map{
+    display: none;
+}
+#north_elementary_school_map{
+    display: none;
+}
+#sout_elementary_school_map{
+    display: none;
+}
+
+
 /* FOOTER */
 
 footer{
