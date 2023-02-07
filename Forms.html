@@ -28,70 +28,85 @@
         <h2>REGISTRATION FORM</h2>
         <form action="./assets/show_data.html" method="get">
 
-            <label for="fname">Player`s First Name:</label>
-            <input type="text" name="fname" id="fname">
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname">
-    
+            <fieldset>
+                <label for="fname">Player`s First Name:</label>
+                <input type="text" name="fname" id="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname">    
+            </fieldset>
+            
             <label for="address">Street Address:</label>
             <input type="text" name="address" id="address">
-    
-            <label for="city">City:</label>
-            <input type="text" name="city" id="city">
-            <label for="zipcode">Zip Code:</label>
-            <input type="number" name="zipcode" id="zipcode">
-    
-            <label for="date">Birth Date(mm/dd/yyyy)</label>
-            <input type="date" name="date" id="date">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" value="female" checked>
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" value="male">
-
-            <p>Grade:</p>
-
-            <label for="pre_school">Pre-School</label>
-            <input type="radio" id="pre_school" name="grade" value="Pre-School">
-            <label for="first_grade">1nd</label>
-            <input type="radio" id="first_grade" name="grade" value="First Grade">
-            <label for="second_grade">2nd</label>
-            <input type="radio" id="second_grade" name="grade" value="Second Grade">
-            <label for="third_grade">3nd</label>
-            <input type="radio" id="third_grade" name="grade" value="Third Grade">
-            <label for="fourth_grade">4nd</label>
-            <input type="radio" id="fourth_grade" name="grade" value="Fourth Grade">
-            <label for="fifth_grade">5nd</label>
-            <input type="radio" id="fifth_grade" name="grade" value="Fifth Grade">
+            
+            <fieldset>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <label for="zipcode">Zip Code:</label>
+                <input type="number" name="zipcode" id="zipcode">
+            </fieldset>
+            
+            <fieldset>
+                <label for="date">Birth Date(mm/dd/yyyy)</label>
+                <input type="date" name="date" id="date">
+                <p>Gender</p>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </fieldset>
+            
+            <fieldset>
+                <p>Grade:</p>
+                <label for="pre_school">Pre-School</label>
+                <input type="radio" id="pre_school" name="grade" value="Pre-School">
+                <label for="first_grade">1nd</label>
+                <input type="radio" id="first_grade" name="grade" value="First Grade">
+                <label for="second_grade">2nd</label>
+                <input type="radio" id="second_grade" name="grade" value="Second Grade">
+                <label for="third_grade">3nd</label>
+                <input type="radio" id="third_grade" name="grade" value="Third Grade">
+                <label for="fourth_grade">4nd</label>
+                <input type="radio" id="fourth_grade" name="grade" value="Fourth Grade">
+                <label for="fifth_grade">5nd</label>
+                <input type="radio" id="fifth_grade" name="grade" value="Fifth Grade">
+            </fieldset>
+            
 
             <h3>Which elementary school do you live near?</h3>
-
             <h4>Closest School:</h4>
 
-            <input type="radio" id="aj_katzenmaier" name="closest_school" value="Aj Katzenmaier">
-            <label for="aj_katzenmaier">Aj Katzenmaier</label>
-            <input type="radio" id="marjorie_p_hart" name="closest_school" value="Marjorie P Hart">
-            <label for="marjorie_p_hart">Marjorie P Hart</label>
-
-            <input type="radio" id="greenbay" name="closest_school" value="Greenbay">
-            <label for="greenbay">Greenbay</label>
-            <input type="radio" id="north_elementary" name="closest_school" value="North Elementary">
-            <label for="north_elementary">North Elementary</label>
-
-            <input type="radio" id="howard_a_yeager" name="closest_school" value="Howard A Yeager">
-            <label for="howard_a_yeager">Howard A Yeager</label>
-            <input type="radio" id="south_elementary" name="closest_school" value="South Elementary">
-            <label for="south_elementary">South Elementary</label>
-
+            <fieldset>
+                <input type="radio" id="aj_katzenmaier" name="closest_school" value="Aj Katzenmaier">
+                <label for="aj_katzenmaier">Aj Katzenmaier</label>
+                <input type="radio" id="marjorie_p_hart" name="closest_school" value="Marjorie P Hart">
+                <label for="marjorie_p_hart">Marjorie P Hart</label>
+            </fieldset>
+            <fieldset>
+                <input type="radio" id="greenbay" name="closest_school" value="Greenbay">
+                <label for="greenbay">Greenbay</label>
+                <input type="radio" id="north_elementary" name="closest_school" value="North Elementary">
+                <label for="north_elementary">North Elementary</label>
+            </fieldset>
+            <fieldset>
+                <input type="radio" id="howard_a_yeager" name="closest_school" value="Howard A Yeager">
+                <label for="howard_a_yeager">Howard A Yeager</label>
+                <input type="radio" id="south_elementary" name="closest_school" value="South Elementary">
+                <label for="south_elementary">South Elementary</label>
+            </fieldset>
+            
             <h3>What position(s) do you normally play? (check all that apply</h3>
 
-            <input type="checkbox" id="position1" name="position1" value="Forward">
-            <label for="position1">Forward</label>
-            <input type="checkbox" id="position2" name="position2" value="Midfield">
-            <label for="position2">Midfield</label>
-            <input type="checkbox" id="position3" name="position3" value="Defense">
-            <label for="position3">Defense</label>
-            <input type="checkbox" id="position4" name="position4" value="Goalkeeper">
-            <label for="position4">Goalkeeper</label>
+            <fieldset>
+                <input type="checkbox" id="position1" name="position1" value="Forward">
+                <label for="position1">Forward</label>
+                <input type="checkbox" id="position2" name="position2" value="Midfield">
+                <label for="position2">Midfield</label>
+                <input type="checkbox" id="position3" name="position3" value="Defense">
+                <label for="position3">Defense</label>
+                <input type="checkbox" id="position4" name="position4" value="Goalkeeper">
+                <label for="position4">Goalkeeper</label>
+            </fieldset>
+            
 
             <h3>Uniform Size</h3>
 
