@@ -24,107 +24,124 @@
     </nav>
 
     <section>
-
-        <h2>REGISTRATION FORM</h2>
+        <h3>REGISTRATION FORM</h3>
         <form action="./assets/show_data.html" method="get">
-
-            <label for="fname">Player`s First Name:</label>
-            <input type="text" name="fname" id="fname">
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname">
+            <fieldset class="form-section">
+                <legend><h3>Player`s</h3></legend>
+                <div class="form-renglon form-text">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname">    
+                </div>
+                <div class="form-renglon form-text"><label for="address">Street Address:</label>
+                    <input type="text" name="address" id="address"></div>
+                <div class="form-renglon form-text">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="number" name="zipcode" id="zipcode">
+                </div>
+                <div class="form-renglon">
+                    <label for="date">Birth Date(mm/dd/yyyy)</label>
+                    <input type="date" name="date" id="date">
+                    <p>Gender</p>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div class="form-renglon">
+                    <p>Grade:</p>
+                    <label for="pre_school">Pre-School</label>
+                    <input type="radio" id="pre_school" name="grade" value="Pre-School">
+                    <label for="first_grade">1nd</label>
+                    <input type="radio" id="first_grade" name="grade" value="First Grade">
+                    <label for="second_grade">2nd</label>
+                    <input type="radio" id="second_grade" name="grade" value="Second Grade">
+                    <label for="third_grade">3nd</label>
+                    <input type="radio" id="third_grade" name="grade" value="Third Grade">
+                    <label for="fourth_grade">4nd</label>
+                    <input type="radio" id="fourth_grade" name="grade" value="Fourth Grade">
+                    <label for="fifth_grade">5nd</label>
+                    <input type="radio" id="fifth_grade" name="grade" value="Fifth Grade">
+                </div>
+            </fieldset>
+            <fieldset class="form-section">
+                <legend><h3>Which elementary school do you live near?</h3></legend>
+                <h4>Closest School:</h4>
+                <div class="form-renglon">
+                    <input type="radio" id="aj_katzenmaier" name="closest_school" value="Aj Katzenmaier">
+                    <label for="aj_katzenmaier">Aj Katzenmaier</label>
+                    <input type="radio" id="marjorie_p_hart" name="closest_school" value="Marjorie P Hart">
+                    <label for="marjorie_p_hart">Marjorie P Hart</label>
+                </div>
+                <div class="form-renglon">
+                    <input type="radio" id="greenbay" name="closest_school" value="Greenbay">
+                    <label for="greenbay">Greenbay</label>
+                    <input type="radio" id="north_elementary" name="closest_school" value="North Elementary">
+                    <label for="north_elementary">North Elementary</label>
+                </div>
+                <div class="form-renglon">
+                    <input type="radio" id="howard_a_yeager" name="closest_school" value="Howard A Yeager">
+                    <label for="howard_a_yeager">Howard A Yeager</label>
+                    <input type="radio" id="south_elementary" name="closest_school" value="South Elementary">
+                    <label for="south_elementary">South Elementary</label>
+                </div>
+            </fieldset>
+            <fieldset class="form-section">
+                <legend><h3>What position(s) do you normally play? (check all that apply</h3></legend>
+                <div class="form-renglon">
+                    <input type="checkbox" id="position1" name="position1" value="Forward">
+                    <label for="position1">Forward</label>
+                    <input type="checkbox" id="position2" name="position2" value="Midfield">
+                    <label for="position2">Midfield</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="position3" name="position3" value="Defense">
+                    <label for="position3">Defense</label>
+                    <input type="checkbox" id="position4" name="position4" value="Goalkeeper">
+                    <label for="position4">Goalkeeper</label>
+                </div>
+                
+            </fieldset>
+            <fieldset class="form-section">
+                <legend><h3>Uniform Size</h3></legend>
+                <input type="radio" id="uniform1" name="uniformsize" value="Youth Small">
+                <label for="uniform1">Youth Small</label>
     
-            <label for="address">Street Address:</label>
-            <input type="text" name="address" id="address">
+                <input type="radio" id="uniform2" name="uniformsize" value="Medium">
+                <label for="uniform2">Medium</label>
     
-            <label for="city">City:</label>
-            <input type="text" name="city" id="city">
-            <label for="zipcode">Zip Code:</label>
-            <input type="number" name="zipcode" id="zipcode">
+                <input type="radio" id="uniform3" name="uniformsize" value="Youth Medium">
+                <label for="uniform3">Youth Medium</label>
     
-            <label for="date">Birth Date(mm/dd/yyyy)</label>
-            <input type="date" name="date" id="date">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" value="female" checked>
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" value="male">
-
-            <p>Grade:</p>
-
-            <label for="pre_school">Pre-School</label>
-            <input type="radio" id="pre_school" name="grade" value="Pre-School">
-            <label for="first_grade">1nd</label>
-            <input type="radio" id="first_grade" name="grade" value="First Grade">
-            <label for="second_grade">2nd</label>
-            <input type="radio" id="second_grade" name="grade" value="Second Grade">
-            <label for="third_grade">3nd</label>
-            <input type="radio" id="third_grade" name="grade" value="Third Grade">
-            <label for="fourth_grade">4nd</label>
-            <input type="radio" id="fourth_grade" name="grade" value="Fourth Grade">
-            <label for="fifth_grade">5nd</label>
-            <input type="radio" id="fifth_grade" name="grade" value="Fifth Grade">
-
-            <h3>Which elementary school do you live near?</h3>
-
-            <h4>Closest School:</h4>
-
-            <input type="radio" id="aj_katzenmaier" name="closest_school" value="Aj Katzenmaier">
-            <label for="aj_katzenmaier">Aj Katzenmaier</label>
-            <input type="radio" id="marjorie_p_hart" name="closest_school" value="Marjorie P Hart">
-            <label for="marjorie_p_hart">Marjorie P Hart</label>
-
-            <input type="radio" id="greenbay" name="closest_school" value="Greenbay">
-            <label for="greenbay">Greenbay</label>
-            <input type="radio" id="north_elementary" name="closest_school" value="North Elementary">
-            <label for="north_elementary">North Elementary</label>
-
-            <input type="radio" id="howard_a_yeager" name="closest_school" value="Howard A Yeager">
-            <label for="howard_a_yeager">Howard A Yeager</label>
-            <input type="radio" id="south_elementary" name="closest_school" value="South Elementary">
-            <label for="south_elementary">South Elementary</label>
-
-            <h3>What position(s) do you normally play? (check all that apply</h3>
-
-            <input type="checkbox" id="position1" name="position1" value="Forward">
-            <label for="position1">Forward</label>
-            <input type="checkbox" id="position2" name="position2" value="Midfield">
-            <label for="position2">Midfield</label>
-            <input type="checkbox" id="position3" name="position3" value="Defense">
-            <label for="position3">Defense</label>
-            <input type="checkbox" id="position4" name="position4" value="Goalkeeper">
-            <label for="position4">Goalkeeper</label>
-
-            <h3>Uniform Size</h3>
-
-            <input type="radio" id="uniform1" name="uniformsize" value="Youth Small">
-            <label for="uniform1">Youth Small</label>
-
-            <input type="radio" id="uniform2" name="uniformsize" value="Medium">
-            <label for="uniform2">Medium</label>
-
-            <input type="radio" id="uniform3" name="uniformsize" value="Youth Medium">
-            <label for="uniform3">Youth Medium</label>
-
-            <input type="radio" id="uniform4" name="uniformsize" value="Large">
-            <label for="uniform4">Large</label>
-
-            <input type="radio" id="uniform5" name="uniformsize" value="Youth Large">
-            <label for="uniform5">Youth Large</label>
-
-            <input type="radio" id="uniform6" name="uniformsize" value="Extra-Large">
-            <label for="uniform6">Extra-Large</label>
-
-            <input type="radio" id="uniform7" name="uniformsize" value="Small">
-            <label for="uniform7">Small</label>
-
-            <p>I, the parent or guardian of the minor registrant, agree that registrant and I will abide by all the rules of Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its their employees an associated personnel and volunteers, including the facilities used for registrant`s participation in the programand/orbeing transported to or form MDHL sponsored activities, which transportation.</p>
-            <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
-
-            <label for="signature">Parent/Guardian Signature:</label>
-            <input type="text" name="guardian signature" id="signature">
-            <label for="signature_date">date:</label>
-            <input type="date" name="signature date" id="signature_date">
-
-            <input type="submit" value="submit">
+                <input type="radio" id="uniform4" name="uniformsize" value="Large">
+                <label for="uniform4">Large</label>
+    
+                <input type="radio" id="uniform5" name="uniformsize" value="Youth Large">
+                <label for="uniform5">Youth Large</label>
+    
+                <input type="radio" id="uniform6" name="uniformsize" value="Extra-Large">
+                <label for="uniform6">Extra-Large</label>
+    
+                <input type="radio" id="uniform7" name="uniformsize" value="Small">
+                <label for="uniform7">Small</label>
+            </fieldset>
+            
+            <div class="form-permiso">
+                <p>I, the parent or guardian of the minor registrant, agree that registrant and I will abide by all the rules of Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its their employees an associated personnel and volunteers, including the facilities used for registrant`s participation in the programand/orbeing transported to or form MDHL sponsored activities, which transportation.</p>
+                <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>    
+            </div>
+            
+            <fieldset class="form-section section-signature">
+                <label class="form-text"  for="signature">Parent/Guardian Signature:</label>
+                <input type="text" name="guardian signature" id="signature">
+                <label for="signature_date">date:</label>
+                <input type="date" name="signature date" id="signature_date">    
+            </fieldset>
+            
+            <input type="submit" value="submit" class="submit-button">
         </form>
     
     </section>
@@ -134,5 +151,4 @@
     <p>Task 4</p>
     <p>creado por Agustin Muguruza</p> 
 </footer>
-
 </html>
