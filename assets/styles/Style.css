@@ -85,8 +85,10 @@ footer{
     background-color: #000;
     font-weight: bolder;
 }
-
-
+.form-section{
+    background-color: rgb(48, 47, 47);
+    border-color: #fce00b;
+}
 
 /* POSICION */
 main{
@@ -134,6 +136,12 @@ section h3{
 .index p,.contact p, .about p, .game-information p{
     padding: 10px 10px 10px 50px;
 }
+table{
+    margin: 5%;
+}
+th{
+    background-color: #1d1c1c;
+}
 table, thead, tr, th, td{
     border: rgb(192, 192, 192) 2px solid;
     border-collapse: collapse;
@@ -173,13 +181,67 @@ li{
     font-weight: bolder;
 }
 form{
-    color: white;
     display: flex;
     flex-direction: column;
+    margin: 3%;
+    font-size: 1.1rem;
+}
+.form-section{
+    display: block;
+}
+.form-renglon {
+    display: flex;
+    align-items: baseline;
+    justify-content: stretch;
+}
+.form-text input{
+    width: 1000%;
+    height: fit-content;
+}
+.form-permiso{
+    padding: 30px;
+    font-size: 1.2rem;
+}
+form label{
+    margin: 10px 10px;
+}
+.section-signature{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.section-signature input{
+    height: min-content;
+    
+}
+.submit-button{
+    background-color: #f8e12e;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 2%;
+    height: 3rem;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
-#aj_katzenmaier_map{
+
+.titulo-mapa{
+    font-size: 300%;
+    display: flex;
+    justify-content:  center;
+}
+ .all-maps{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+ }
+.maps{
+    margin: 10px;
+}
+
+/* #aj_katzenmaier_map{
     display: none;
 }
 #greenbay_map{
@@ -197,7 +259,7 @@ form{
 #south_elementary_school_map{
     display: none;
 }
-
+ */
 
 /* FOOTER */
 
