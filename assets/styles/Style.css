@@ -89,7 +89,6 @@ footer{
     background-color: rgb(48, 47, 47);
     border-color: #fce00b;
 }
-
 /* POSICION */
 main{
     display: flex;
@@ -197,6 +196,7 @@ form{
 .form-text input{
     height: fit-content;
     flex-grow: 1;
+
 }
 .form-permiso{
     padding: 30px;
