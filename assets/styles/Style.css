@@ -85,13 +85,10 @@ footer{
     background-color: #000;
     font-weight: bolder;
 }
-
 .form-section{
     background-color: rgb(48, 47, 47);
     border-color: #fce00b;
 }
-
-
 /* POSICION */
 main{
     display: flex;
@@ -197,8 +194,9 @@ form{
     justify-content: stretch;
 }
 .form-text input{
-    width: 1000%;
     height: fit-content;
+    flex-grow: 1;
+
 }
 .form-permiso{
     padding: 30px;
@@ -244,7 +242,6 @@ form label{
 }
 
 /* #aj_katzenmaier_map{
-
     display: none;
 }
 #greenbay_map{
@@ -263,7 +260,6 @@ form label{
     display: none;
 }
  */
-
 
 /* FOOTER */
 
